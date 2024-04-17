@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Animals</title>
+    <!--bootstrap cdn-->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap&family=Gowun+Batang&family=Gowun+Dodum&display=swap');
+        /*-- font --*/
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap&family=Jersey+10+Charted&family=Gowun+Batang&family=Gowun+Dodum&display=swap');
 
         * {
             /* 고운돋움체 */
@@ -14,10 +18,7 @@
 
             /* 고운바탕체 */
             /*font-family: "Gowun Batang", serif;*/
-
-            font-weight: 400;
-            font-style: normal;
-            font-size: 18px;
+            font-size: 20px;
         }
 
         .head {
@@ -27,7 +28,7 @@
             top: 0;
             left: 0;
             padding: 30px;
-            
+
             border-bottom: 2px solid #000000;
             background-color: white;
         }
@@ -62,6 +63,8 @@
         .gallery>img {
             width: calc(10% - 10px);
             margin-bottom: 20px;
+            border-radius: 50%;
+            border: 5px solid #9a9a9b;
         }
 
         .gallery>img:first-child {
@@ -152,14 +155,18 @@
         개발자 5명을 소개합니다 !</p>
     <div>
         <div class="gallery">
-            <img src="Soyoung Yang.png" alt="Photo 1">
-            <img src="Sunghoon Cho.jpg" alt="Photo 2">
-            <img src="Hojin Han.png" alt="Photo 3">
-            <img src="Daejong Jung.jpg" alt="Photo 4">
-            <img src="Jiyeon Won.jpg" alt="Photo 5">
+            <img src="..\picture\tiger.jpg" alt="Photo 1">
+            <img src="..\picture\bear.jpg" alt="Photo 2">
+            <img src="..\picture\quokka.jpg" alt="Photo 4">
+            <img src="..\picture\mouse.jpg" alt="Photo 5">
+            <img src="..\picture\cat.jpg" alt="Photo 3">
         </div>
     </div>
 
+    <!--bootstrap script-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>-->
 </body>
 
 </html>
