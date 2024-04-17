@@ -5,43 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>팀 소개</title>
-
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap&family=Gowun+Batang&family=Gowun+Dodum&display=swap');
 
-        .bangers-regular {
-            font-family: "Bangers", system-ui;
+        * {
+            /* 고운돋움체 */
+            font-family: "Gowun Dodum", sans-serif;
+
+            /* 고운바탕체 */
+            /*font-family: "Gowun Batang", serif;*/
+
             font-weight: 400;
             font-style: normal;
-            font-size: 60px;
+            font-size: 18px;
+        }
+
+        .head {
             /* 밑줄 길이 조절 */
+            padding-bottom: 10px;
             border-bottom: 2px solid #000000;
             width: 100%;
             margin: 20px auto 30px;
+            padding: 30px;
+        }
+
+        .title {
+            font-family: "Bangers", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 70px;
+            padding: 15px;
         }
 
         .introduction {
-            font-size: 13px;
-            font-weight: 0;
-            line-height: 15px;
+            line-height: 25px;
+            margin: 15px auto 20px 20px;
         }
-        
+
+        .start {
+            font-family: "Gowun Batang", serif;
+            font-size: 50px;
+            font-weight: 900;
+            margin: 50px auto 50px 15px;
+        }
+
         .gallery {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between; 
-        }
-        .gallery > img {
-            width: calc(10% - 10px);
-            margin-bottom: 20px; 
+            justify-content: space-between;
         }
 
-        .gallery > img:first-child {
+        .gallery>img {
+            width: calc(10% - 10px);
+            margin-bottom: 20px;
+        }
+
+        .gallery>img:first-child {
             margin-left: 100px;
         }
-        
-        .gallery > img:last-child {
+
+        .gallery>img:last-child {
             margin-right: 100px;
+        }
+
+        div {
+            -ms-user-select: none;
+            -moz-user-select: -moz-none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:focus {
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:active {
+            text-decoration: none;
         }
     </style>
 
@@ -49,39 +103,50 @@
 
 <body>
 
-    <div class="bangers-regular">Codding animals</div>
+    <div class="head">
+        <a href="..\index.html" class="title">Codding animals</a>
+    </div>
 
     <div class="introduction">
-        <p style="font-size:20px; line-height: 40px; font-weight: 900; margin-left:15px;">코딩 애니멀즈는 말이죠..</p>
+        <div class="start">
+            코딩 애니멀즈는?
+        </div>
+        <p>“개 같이 벌어서 짐승처럼 코딩한다.”</p>
+        <p style="color:red;">짐승이라니, 무섭나요?</p>
+        <p>사나워 보일 수 있지만 우리 아이는 안 물어요.</p>
+        <br>
+        <div class="start">
+            특징
+        </div>
+        5명 전원 MBTI가 개발자에 많은 비중을 차지하는 "I"인 소심하면서 열정 넘치는 팀입니다.
+        <br>
+        <br>
+        <div class="start">우리의 목표는,</div>
+        여기 계신 모든분들이 그렇듯,<br>
+        세상에서 필요로 하는 개발자가 되기 위한 궁극적인 목표를 가지고 있습니다.
+        <br>
+        <br>
+        우리 팀 규칙
+        <p>- 개인 공부 09 : 00 ~ 11 : 00</p>
+        <p>- 점심밥 13 : 00 ~ 14 : 00</p>
+        <p>- 회의 14 : 00 ~ 15 : 00</p>
+        <p>- 개발 작업 15 : 00 ~ 18 : 00</p>
+        <p>- 저녁밥 18 : 00 ~ 19 : 00</p>
+        <p>- 회의 후 잔업 : 19 : 00 ~ 21 : 00</p>
+        <br>
+        <div class="start">blog & github</div>
+        <a href="https://github.com/a-white-bit/hatchiji">Coding Animals</a><br>
+        <a href="https://velog.io/@a-white-bit">양소영</a><span> (https://velog.io/@a-white-bit)</span><br>
+        <a href="">원지연</a><br>
+        <a href="">정대종</a><br>
+        <a href="https://muo2.tistory.com">조성훈</a> <span>(https://muo2.tistory.com)</span><br>
+        <a href="https://github.com/Cthj1234">한호진</a><span>(https://github.com/Cthj1234)</span><br>
 
-        <ul>
-            <li>
-                <p>팀 소개 : “개 같이 벌어서 짐승처럼 코딩한다.”</p>
-                <p style="color:red;">짐승이라니, 무섭나요?</p>
-                <p>사나워 보일 수 있지만 우리 아이는 안 물어요.</p>
-            </li>
-            <br>
-            <li>우리 팀만의 특징 : 5명 전원 MBTI가 개발자에 많은 비중을 차지하는 "I"인 소심하면서 열정 넘치는 팀입니다.</li><br><br>
-            <li>추구하는 궁극적인 목표 : 여기 계신 모든분들이 그렇듯, 세상에서 필요로 하는 개발자가 되기 위한 궁극적인 목표를 가지고 있습니다.</li><br><br>
-            <li>우리 팀 규칙<br>
-                <p>- 개인 공부 09 : 00 ~ 11 : 00</p>
-                <p>- 점심밥 13 : 00 ~ 14 : 00</p>
-                <p>- 회의 14 : 00 ~ 15 : 00</p>
-                <p>- 개발 작업 15 : 00 ~ 18 : 00</p>
-                <p>- 저녁밥 18 : 00 ~ 19 : 00</p>
-                <p>- 회의 후 잔업 : 19 : 00 ~ 21 : 00</p><br>
-            </li>
-            <li>팀원 블로그 or github 주소<br><br>
-                <a href="https://velog.io/@a-white-bit/posts">양소영</a><span> (https://velog.io/@a-white-bit/posts)</span>
-                <br>
-                <a href="">원지연</a> <br>
-                <a href="">정대종</a> <br>
-                <a href="https://muo2.tistory.com/">조성훈</a> <span>(https://muo2.tistory.com/)</span><br>
-                <a href="https://github.com/Cthj1234">한호진</a><span>(https://github.com/Cthj1234)</span><br>
-            </li>
-        </ul>
+
     </div>
-    <p style="font-size:30px; line-height: 40px; margin: 50px auto 50px auto; font-weight: 900; text-align: center; color:red">개발자 5명을 소개합니다 !</p>
+    <p
+        style="font-size:30px; line-height: 40px; margin: 50px auto 50px auto; font-weight: 900; text-align: center; color:red">
+        개발자 5명을 소개합니다 !</p>
     <div>
         <div class="gallery">
             <img src="Soyoung Yang.png" alt="Photo 1">
