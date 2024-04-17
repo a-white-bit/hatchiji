@@ -1,0 +1,73 @@
+#comment-box {
+    width: 96%;
+    padding: 10px;
+}
+#comment-box input, textarea {
+    border-radius: 6px;
+    border: 1px solid black;
+}
+#comment-box button {
+    border-radius: 4px;
+}
+#comment-box #comment-input-box div {
+    margin-bottom: 10px;
+}
+#comment-box #comment-input-box #input-info input {
+    padding: 5px;
+}
+#comment-box #comment-input-box #input-content textarea {
+    padding: 5px;
+    width: 96%;
+    height: 100px;
+    resize: none;
+}
+#comment-box #comment-input-box #input-bottom #comment-add {
+    padding: 5px;
+    color: white;
+    background-color: #0078ff;
+    border: none;
+}
+
+#comment-list-box {
+    width: 96%;
+}
+
+#comment-list-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#comment-list-box .comment-box {
+    display: flex;
+    padding: 5px;
+}
+
+#comment-list-box .comment-box .comment-content {
+    flex-grow: 1;
+}
+
+#comment-list-box .comment-box .comment-nickname {
+    margin-right: 10px;
+    min-width: 120px;
+}
+
+#comment-list-box .comment-item {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+#comment-list-box .comment-delete-box {
+    padding: 5px;
+}
+
+#comment-list-box .comment-delete-box input {
+    padding: 5px;
+}
+
+.comment-delete {
+    padding: 5px;
+    color: white;
+    background-color: #e13444;
+    border: none;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Title</title>
+    <link href="./comment.css" rel="stylesheet">
+</head>
+<body>
+<div id="comment-box">
+    <div id="comment-input-box">
+        <div id="input-info">
+            <input type="text" id="user-nickname" placeholder="닉네임" maxlength="8">
+            <input type="password" id="user-password" placeholder="비밀번호" maxlength="8">
+        </div>
+        <div id="input-content">
+            <textarea id="comment-input" placeholder="내용"></textarea>
+        </div>
+        <div id="input-bottom">
+            <button type="button" id="comment-add">저장</button>
+        </div>
+    </div>
+
+    <div id="comment-list-box">
+        <ul id="comment-items">
+        </ul>
+    </div>
+</div>
+
+<script type="module" src="./firebaseFunction.js"></script>
+
+</body>
+</html>
