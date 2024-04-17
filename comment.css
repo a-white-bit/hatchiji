@@ -1,16 +1,30 @@
 #comment-box {
-    width: 96%;
+    width: 100%;
     padding: 10px;
 }
 #comment-box input, textarea {
     border-radius: 6px;
-    border: 1px solid black;
+    border: none;
+    outline: 2px solid #cdd3d9;
+}
+#comment-box input:focus {
+    box-shadow: 0 0 0 4px #c1d9fe;
+    outline: 2px solid #9ac2fd;
+}
+#comment-box textarea:focus {
+    box-shadow: 0 0 0 4px #c1d9fe;
+    outline: 2px solid #9ac2fd;
 }
 #comment-box button {
     border-radius: 4px;
 }
 #comment-box #comment-input-box div {
     margin-bottom: 10px;
+}
+#comment-box #comment-input-box #input-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 #comment-box #comment-input-box #input-info input {
     padding: 5px;
@@ -24,8 +38,11 @@
 #comment-box #comment-input-box #input-bottom #comment-add {
     padding: 5px;
     color: white;
-    background-color: #0078ff;
+    background-color: #23272b;
     border: none;
+}
+#comment-box #comment-input-box #input-bottom #comment-add:focus {
+    box-shadow: 0 0 0 4px #c1d9fe;
 }
 
 #comment-list-box {
@@ -70,4 +87,13 @@
     color: white;
     background-color: #e13444;
     border: none;
+}
+.comment-delete:focus {
+    box-shadow: 0 0 0 4px #efa7ae;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: bold;
 }
