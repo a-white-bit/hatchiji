@@ -1,5 +1,5 @@
 /*-- font --*/
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap&family=Jersey+10+Charted&family=Gowun+Batang&family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap&family=Jersey+10+Charted&family=Gowun+Batang&family=Gowun+Dodum&family=Jua&display=swap');
 
 * {
     /* 고운돋움체 */
@@ -18,7 +18,7 @@
     padding: 30px;
 
     border-bottom: 2px solid #000000;
-    background-color: transparent;
+    background-color: white;
 
     z-index: 10;
 }
@@ -66,12 +66,17 @@
     margin-right: 10px;
 }
 
-.members-modal {
-    position:absolute;
-    top: 300px;
+.member-img>img {
+    max-width: 500px;
 }
 
-
+.modaltitle {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin-left: 20px;
+}
 
 div {
     -ms-user-select: none;
