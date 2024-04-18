@@ -1,0 +1,85 @@
+/*-- font --*/
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap&family=Jersey+10+Charted&family=Gowun+Batang&family=Gowun+Dodum&display=swap');
+
+* {
+    /* 고운돋움체 */
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 20px;
+
+    /* 버튼준비 */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.head {
+    /* 헤더 */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 150px;
+    padding: 30px;
+
+    border-bottom: 2px solid #000000;
+    background-color: white;
+
+    z-index: 10;
+}
+
+.title {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-size: 70px;
+    padding: 15px;
+}
+
+.title:hover {
+    color: black;
+}
+
+.body {
+    /* 바디 */
+    position: absolute;
+    top: 150px;
+    width: 100%;
+}
+
+.introduction {
+    margin: 20px 30px 20px 50px;
+    line-height: 25px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery>img {
+    max-width: 500px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+}
+
+.gallery>img:first-child {
+    margin-left: 10px;
+}
+
+.gallery>img:last-child {
+    margin-right: 10px;
+}
+
+div {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

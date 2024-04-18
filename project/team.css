@@ -5,6 +5,11 @@
     /* 고운돋움체 */
     font-family: "Gowun Dodum", sans-serif;
     font-size: 20px;
+
+    /* 버튼준비 */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .head {
@@ -52,6 +57,18 @@
     line-height: 25px;
 }
 
+.start {
+    /* '코딩 애니멀즈는?', '특징', '목표', '규칙'*/
+    /* 고운바탕체 */
+    display: inline-block;
+    font-family: "Gowun Batang", serif;
+    font-size: clamp(1.7rem, 3vw, 2rem);
+    font-weight: 900;
+    line-height: 40px;
+    margin: 50px auto 40px -15px;
+    background-color: rgb(233, 233, 233);
+}
+
 .right {
     /* 오른쪽 바디 */
     position: fixed;
@@ -59,14 +76,12 @@
     height: 100%;
     left: 50%;
     top: 150px;
-
-
 }
 
 .members {
     /* 멤버카드-캐러셀 */
     position: absolute;
-    left: calc(50% - 300px);
+    left: calc(60% - 300px);
     top: calc(50% - 500px);
     width: 500px;
     float: left;
@@ -82,42 +97,62 @@
     filter: invert(100%);
 }
 
-.start {
-    /* '코딩 애니멀즈는?', '특징', '목표', '규칙'*/
-    /* 고운바탕체 */
-    display: inline-block;
-    font-family: "Gowun Batang", serif;
-    font-size: clamp(1.7rem, 3vw, 2rem);
-    font-weight: 900;
-    line-height: 40px;
-    margin: 50px auto 40px -15px;
-    background-color: rgb(233, 233, 233);
+.link {
+    font-family: "Jersey 10 Charted", sans-serif;
 }
 
-/*
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.fa-github:hover {
+    color: black;
 }
 
-.gallery>img {
-    width: 150px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    border: 4px solid #a5a5a5;
+.nextpage {
+    /* 다음페이지 버튼 */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    transform: translate(150px, 150px);
 }
 
-.gallery>img:first-child {
-    margin-left: 100px;
+.buttons {
+    margin: 10%;
+    text-align: center;
 }
 
-.gallery>img:last-child {
-    margin-right: 100px;
-}*/
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
 
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
 
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
 
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-8 {
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
 
 div {
     -ms-user-select: none;
