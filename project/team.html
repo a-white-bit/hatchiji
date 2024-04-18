@@ -6,167 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Animals</title>
     <!--bootstrap cdn-->
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
-    <style>
-        /*-- font --*/
-        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap&family=Jersey+10+Charted&family=Gowun+Batang&family=Gowun+Dodum&display=swap');
-
-        * {
-            /* 고운돋움체 */
-            font-family: "Gowun Dodum", sans-serif;
-
-            /* 고운바탕체 */
-            /*font-family: "Gowun Batang", serif;*/
-            font-size: 20px;
-        }
-
-        .head {
-            /* 밑줄 길이 조절 */
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            padding: 30px;
-
-            border-bottom: 2px solid #000000;
-            background-color: white;
-        }
-
-        .title {
-            font-family: "Bangers", system-ui;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 70px;
-            padding: 15px;
-        }
-
-        .introduction {
-            line-height: 25px;
-            margin: 15px auto 20px 20px;
-            padding-top: 130px;
-        }
-
-        .start {
-            font-family: "Gowun Batang", serif;
-            font-size: 50px;
-            font-weight: 900;
-            margin: 50px auto 50px 15px;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .gallery>img {
-            width: calc(10% - 10px);
-            margin-bottom: 20px;
-            border-radius: 50%;
-            border: 5px solid #9a9a9b;
-        }
-
-        .gallery>img:first-child {
-            margin-left: 100px;
-        }
-
-        .gallery>img:last-child {
-            margin-right: 100px;
-        }
-
-        div {
-            -ms-user-select: none;
-            -moz-user-select: -moz-none;
-            -khtml-user-select: none;
-            -webkit-user-select: none;
-            user-select: none;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        a:visited {
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-
-        a:focus {
-            text-decoration: none;
-        }
-
-        a:hover,
-        a:active {
-            text-decoration: none;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--font-awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="team.css" rel="stylesheet">
 
 </head>
 
 <body>
-
     <div class="head">
-        <a class="title" href="..\index.html">Coding animals</a>
+        <a class="title" id="title" href="..\index.html">Coding animals
+            <i class="fa-solid fa-cat"></i>
+        </a>
     </div>
 
-    <div class="introduction">
-        <div class="start">
-            코딩 애니멀즈는?
-        </div>
-        <p>“개 같이 벌어서 짐승처럼 코딩한다.”</p>
-        <p style="color:red;">짐승이라니, 무섭나요?</p>
-        <p>사나워 보일 수 있지만 우리 아이는 안 물어요.</p>
-        <br>
-        <div class="start">
-            특징
-        </div>
-        5명 전원 MBTI가 개발자에 많은 비중을 차지하는 "I"인 소심하면서 열정 넘치는 팀입니다.
-        <br>
-        <br>
-        <div class="start">우리의 목표는,</div>
-        여기 계신 모든분들이 그렇듯,<br>
-        세상에서 필요로 하는 개발자가 되기 위한 궁극적인 목표를 가지고 있습니다.
-        <br>
-        <br>
-        <div class="start">팀 규칙</div>
-        <p>- 개인 공부 09 : 00 ~ 11 : 00</p>
-        <p>- 점심밥 13 : 00 ~ 14 : 00</p>
-        <p>- 회의 14 : 00 ~ 15 : 00</p>
-        <p>- 개발 작업 15 : 00 ~ 18 : 00</p>
-        <p>- 저녁밥 18 : 00 ~ 19 : 00</p>
-        <p>- 회의 후 잔업 : 19 : 00 ~ 21 : 00</p>
-        <br>
-        <div class="start">blog & github</div>
-        <a href="https://github.com/a-white-bit/hatchiji">Coding Animals</a><br>
-        <a href="https://velog.io/@a-white-bit">양소영</a><span> (https://velog.io/@a-white-bit)</span><br>
-        <a href="">원지연</a><br>
-        <a href="">정대종</a><br>
-        <a href="https://muo2.tistory.com">조성훈</a> <span>(https://muo2.tistory.com)</span><br>
-        <a href="https://github.com/Cthj1234">한호진</a><span>(https://github.com/Cthj1234)</span><br>
-    </div>
+    <div class="body">
+        <div class="left">
+            <div class="introduction">
+                <div class="start">코딩 애니멀즈는?</div>
+                <div class="content">
+                    <p>“개 같이 벌어서 짐승처럼 코딩한다.”</p>
+                    <p style="color:red;">짐승이라니, 무섭나요?</p>
+                    <p>사나워 보일 수 있지만 우리 아이는 안 물어요.</p>
+                </div>
 
-    <p
-        style="font-size:30px; line-height: 40px; margin: 50px auto 50px auto; font-weight: 900; text-align: center; color:red">
-        개발자 5명을 소개합니다 !</p>
-    <div>
-        <div class="gallery">
-            <img src="..\picture\tiger.jpg" alt="Photo 1">
-            <img src="..\picture\bear.jpg" alt="Photo 2">
-            <img src="..\picture\quokka.jpg" alt="Photo 4">
-            <img src="..\picture\mouse.jpg" alt="Photo 5">
-            <img src="..\picture\cat.jpg" alt="Photo 3">
+                <div class="start">특징</div>
+                <div class="content">
+                    <p>5명 전원 MBTI가 개발자에 많은 비중을 차지하는 "I"인 소심하면서 열정 넘치는 팀입니다.</p>
+                </div>
+
+                <div class="start">우리의 목표는,</div>
+                <div class="content">
+                    <p>여기 계신 모든분들이 그렇듯,</p>
+                    <p>세상에서 필요로 하는 개발자가 되기 위한 궁극적인 목표를 가지고 있습니다.</p>
+                </div>
+
+                <div class="start">팀 규칙</div>
+                <div class="content">
+                    <p>- 개인 공부 09 : 00 ~ 11 : 00</p>
+                    <p>- 점심밥 13 : 00 ~ 14 : 00</p>
+                    <p>- 회의 14 : 00 ~ 15 : 00</p>
+                    <p>- 개발 작업 15 : 00 ~ 18 : 00</p>
+                    <p>- 저녁밥 18 : 00 ~ 19 : 00</p>
+                    <p>- 회의 후 잔업 : 19 : 00 ~ 21 : 00</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="right">
+            <div class="members">
+                <!--<p
+                style="font-size:30px; line-height: 40px; margin: 50px auto 50px auto; font-weight: 900; text-align: center; color:red">
+                개발자 5명을 소개합니다 !</p>
+
+            <div>
+                <div class="gallery">
+                    <img src="..\picture\tiger.jpg" alt="Photo 1">
+                    <img src="..\picture\bear.jpg" alt="Photo 2">
+                    <img src="..\picture\quokka.jpg" alt="Photo 4">
+                    <img src="..\picture\mouse.jpg" alt="Photo 5">
+                    <img src="..\picture\cat.jpg" alt="Photo 3">
+                </div>
+            </div>-->
+
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="..\picture\tiger.jpg" class="d-block w-100" alt="tiger">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="..\picture\quokka.jpg" class="d-block w-100" alt="quokka">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="..\picture\mouse.jpg" class="d-block w-100" alt="mouse">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="..\picture\cat.jpg" class="d-block w-100" alt="mouse">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div style="text-align:center;"><div class="start">blogs & github</div><a href="https://github.com/a-white-bit/hatchiji"><i class="fa-brands fa-github fa-3x"></i></a></div>
+                
+                
+                <div class="content" style="margin-left:60px">
+                    <a href="https://velog.io/@a-white-bit">양소영</a><span> (https://velog.io/@a-white-bit)</span><br>
+                    <a href="https://muo2.tistory.com">조성훈</a><span> (https://muo2.tistory.com)</span><br>
+                    <a href="https://github.com/Cthj1234">한호진</a><span> (https://github.com/Cthj1234)</span><br>
+                    <a href="">원지연</a><br>
+                    <a href="">정대종</a><br>
+                </div>
+            </div>
         </div>
     </div>
 
     <!--bootstrap script-->
-    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>-->
+        crossorigin="anonymous"></script>
+
+    <!--jQuery src-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script src="team.js"></script>
 </body>
 
 </html>

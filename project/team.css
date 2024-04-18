@@ -1,0 +1,133 @@
+/*-- font --*/
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap&family=Jersey+10+Charted&family=Gowun+Batang&family=Gowun+Dodum&display=swap');
+
+* {
+    /* 고운돋움체 */
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 20px;
+}
+
+.head {
+    /* 헤더 */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 150px;
+    padding: 30px;
+
+    border-bottom: 2px solid #000000;
+    background-color: white;
+
+    z-index: 10;
+}
+
+.title {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-size: 70px;
+    padding: 15px;
+}
+
+.title:hover {
+    color: black;
+}
+
+.body {
+    /* 바디 */
+    position: absolute;
+    top: 150px;
+    width: 100%;
+}
+
+.left {
+    /* 왼쪽 바디 */
+    width: 50%;
+    float: left;
+}
+
+.introduction {
+    margin: 20px 30px 20px 50px;
+    line-height: 25px;
+}
+
+.right {
+    /* 오른쪽 바디 */
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    top: 150px;
+
+
+}
+
+.members {
+    /* 멤버카드-캐러셀 */
+    position: absolute;
+    left: calc(50% - 300px);
+    top: calc(50% - 500px);
+    width: 500px;
+    float: left;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    border-radius: 50%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.start {
+    /* '코딩 애니멀즈는?', '특징', '목표', '규칙'*/
+    /* 고운바탕체 */
+    display: inline-block;
+    font-family: "Gowun Batang", serif;
+    font-size: clamp(1.7rem, 3vw, 2rem);
+    font-weight: 900;
+    line-height: 40px;
+    margin: 50px auto 40px -15px;
+    background-color: rgb(233, 233, 233);
+}
+
+/*
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery>img {
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 4px solid #a5a5a5;
+}
+
+.gallery>img:first-child {
+    margin-left: 100px;
+}
+
+.gallery>img:last-child {
+    margin-right: 100px;
+}*/
+
+
+
+
+div {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
