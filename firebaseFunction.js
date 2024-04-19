@@ -27,15 +27,20 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 /*댓글 불러오기*/
-// onSnapshot??????????
 let docs = await getDocs(query(collection(db, "comments"), orderBy("createAt", "asc")));
+let mapComments = {
+    "소영": [],
+    "성훈": [],
+    "호진": [],
+    "지연": []
+};
 docs.forEach((doc) => {
     let data = doc.data();
 
     let commentId = doc.id;
+    let detail = data['detail'];
     let nickname = data['nickname'];
     let content = data['content'];
-
     let createAt = data['createAt'].toDate();
     let dateFormat = createAt.getFullYear() + "-" +
         ("0" + (createAt.getMonth() + 1)).slice(-2) + "-" +
@@ -48,10 +53,12 @@ docs.forEach((doc) => {
     let temp_comment = `
         <li class="comment-item">
             <input type="hidden" class="comment-id" value="${commentId}">
-            <div class="comment-box">
+            <div class="comment-info">
                 <div class="comment-nickname">${nickname}</div>
-                <div class="comment-content">${content}</div>
                 <div class="comment-date">${dateFormat}</div>
+            </div>
+            <div class="comment-body">
+                <div class="comment-content">${content}</div>
             </div>
             <div class="comment-delete-box">
                 <input type="password" class="comment-password" placeholder="비밀번호" maxlength="8" size="8">
@@ -59,22 +66,25 @@ docs.forEach((doc) => {
             </div>
         </li>
       `;
-    $("#comment-items").append(temp_comment);
+    mapComments[detail].push(temp_comment);
 });
+console.log(mapComments);
 
 // 댓글 등록
-$("#comment-add").on("click", async function () {
-    let nickname = $("#user-nickname").val();
-    let password = $("#user-password").val();
-    let content = $("#comment-input").val();
+$(".comment-add").on("click", async function () {
+    let closestForm = $(this).closest(".comment-box");
+    let detail = closestForm.find(".detail").val();
+    let nickname = closestForm.find(".user-nickname").val();
+    let password = closestForm.find(".user-password").val();
+    let content = closestForm.find(".comment-input").val();
     let date = new Date();
 
     let addData = {
+        "detail": detail,
         "nickname": nickname,
         "password": password,
         "content": content,
         "createAt": date
-        // "detail": currentDetail
     };
     await addDoc(collection(db, "comments"), addData)
         .then(() => {
@@ -108,4 +118,18 @@ $(".comment-delete").on("click", async function () {
         alert("비밀번호 틀림");
     }
     closestList.find(".comment-password").val("");
+});
+
+$(".comment-items").empty();
+mapComments["소영"].forEach((data) => {
+    $("#tigerModal .comment-items").append(data);
+});
+mapComments["호진"].forEach((data) => {
+    $("#catModal .comment-items").append(data);
+});
+mapComments["지연"].forEach((data) => {
+    $("#mouseModal .comment-items").append(data);
+});
+mapComments["성훈"].forEach((data) => {
+    $("#quokkaModal .comment-items").append(data);
 });
