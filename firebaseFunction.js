@@ -1,5 +1,5 @@
 // Firebase SDK 라이브러리 가져오기
-import {initializeApp} from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
 import {
     addDoc,
     collection,
@@ -98,7 +98,7 @@ $(".comment-add").on("click", async function () {
 });
 
 // 댓글 삭제
-$(".comment-delete").on("click", async function () {
+$(document).on('click', '.comment-delete', async function () {
     let closestList = $(this).closest("li");
     let commentId = closestList.find(".comment-id").val();
     let password = closestList.find(".comment-password").val();
